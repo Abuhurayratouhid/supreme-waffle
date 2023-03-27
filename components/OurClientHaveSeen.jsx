@@ -1,24 +1,31 @@
 import React from 'react';
 import OurPhilosophy from './OurPhilosophy';
+import pic1 from '../public/assets/Client-1.svg';
+import pic2 from '../public/assets/Client-2.svg';
+import pic3 from '../public/assets/Client-3.svg';
+import pic4 from '../public/assets/Client-4.svg';
+import pic5 from '../public/assets/Client-5.svg';
+
+import Image from 'next/image';
 
 const items = [
     {
         id: 1,
         title: 'Upto 2-3 inch loss',
         subTitle: "and reduction in blood pressure medication",
-        picture: 'http://www.deeptamanohar.life.s3-website.ap-south-1.amazonaws.com/images/tileIcon-1.svg'
+        picture: pic4
     },
     {
         id: 2,
         title: 'Up to 10 kgs weight loss',
         subTitle: 'and reduction in blood pressure medication',
-        picture: 'http://www.deeptamanohar.life.s3-website.ap-south-1.amazonaws.com/images/tileIcon-2.svg'
+        picture: pic2
     },
     {
         id: 3,
         title: 'Relief from hot flashes & mood swings',
         subTitle: 'without any allopathic medication',
-        picture: 'http://www.deeptamanohar.life.s3-website.ap-south-1.amazonaws.com/images/tileIcon-3.svg'
+        picture: pic3
     },
     
 
@@ -29,13 +36,13 @@ const moreItems = [
         id: 4,
         title: 'Reversing diabetes naturally',
         subTitle: 'and reduction in PCOD symptoms',
-        picture: 'http://www.deeptamanohar.life.s3-website.ap-south-1.amazonaws.com/images/tileIcon-4.svg'
+        picture: pic4
     },
     {
         id: 5,
         title: 'Natural healthy pregnancy',
         subTitle: 'after failed IUI and IVF cycles',
-        picture: 'http://www.deeptamanohar.life.s3-website.ap-south-1.amazonaws.com/images/tileIcon-5.svg'
+        picture: pic5
     }
 ]
 
@@ -55,7 +62,7 @@ const OurClientHaveSeen = () => {
                     key={item.id}
                     item={item}
                 >
-                    <img src={item.picture} alt="" />
+                    <Image width='155' height='144' src={item.picture} alt="" />
                     <div>
                         <h3>{item.title}</h3>
                         <p>{item.subTitle}</p>
@@ -68,7 +75,7 @@ const OurClientHaveSeen = () => {
                     key={item.id}
                     item={item}
                 >
-                    <img src={item.picture} alt="" />
+                    <Image width='155' height='144' src={item.picture} alt="" />
                     <div>
                         <h3>{item.title}</h3>
                         <p>{item.subTitle}</p>

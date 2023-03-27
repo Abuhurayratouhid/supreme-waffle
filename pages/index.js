@@ -31,7 +31,7 @@ export default function Home() {
       <Banner />
       <OurPrograms />
       <HowWeDo />
-      {/* <OurClientHaveSeen /> */}
+      <OurClientHaveSeen />
       {/* <HowProgramWorks /> */}
       {/* <Stories /> */}
       {/* <ExpertTeam /> */}
