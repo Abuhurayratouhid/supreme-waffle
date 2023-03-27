@@ -30,7 +30,7 @@ export default function Home() {
       <Navbar />
       <Banner />
       <OurPrograms />
-      {/* <HowWeDo /> */}
+      <HowWeDo />
       {/* <OurClientHaveSeen /> */}
       {/* <HowProgramWorks /> */}
       {/* <Stories /> */}

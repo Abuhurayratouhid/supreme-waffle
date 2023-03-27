@@ -1,4 +1,8 @@
+import Image from 'next/image';
 import React from 'react';
+import pic1 from '../public/assets/how-we-do-1.jpg';
+import pic2 from '../public/assets/how-we-do-2.jpg';
+import pic3 from '../public/assets/how-we-do-3.jpg';
 
 const HowWeDo = () => {
     return (
@@ -11,7 +15,7 @@ const HowWeDo = () => {
             {/* one  */}
             <div className='lg:flex justify-around items-center   max-w-[1300px] m-auto py-5'>
                 <div className='bg-sky-400 w-full h-[50vh] lg:w-[500px]  lg:h-[500px] flex justify-center lg:justify-end items-center' style={{borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70% '}}>
-                    <img className='lg:w-[400px] w-72 h-72  rounded-xl' src="http://www.deeptamanohar.life.s3-website.ap-south-1.amazonaws.com/3ojyyf2632223ekuqd259a7e-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/tile-2.jpg" alt="" />
+                    <Image width='288' height='288' className='lg:w-[400px] w-72 h-72  rounded-xl' src={pic1} alt="photo" />
                 </div>
                 <div className='text-center lg:text-left'>
                     <h3>Diet</h3>
@@ -25,13 +29,13 @@ const HowWeDo = () => {
                     <p>In your kitchen sits the wisdom of Ayurvedic herbs <br /> and ingredients for wellness. <br /> We tell you how to use them</p>
                 </div>
                 <div className='bg-sky-400 w-full h-[50vh] lg:w-[500px]  lg:h-[500px] flex justify-center lg:justify-start items-center' style={{borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70% '}}>
-                    <img className='lg:w-[400px] w-72 h-72  rounded-xl' src="http://www.deeptamanohar.life.s3-website.ap-south-1.amazonaws.com/3ojyyf2632223ekuqd259a7e-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/tile-3.jpg" alt="" />
+                    <Image width='288' height='288' className='lg:w-[400px] w-72 h-72  rounded-xl' src={pic2} alt="photo" />
                 </div>
             </div>
             {/* three  */}
             <div className='lg:flex justify-around items-center   max-w-[1300px] m-auto py-5'>
                 <div className='bg-sky-400 w-full h-[50vh] lg:w-[500px]  lg:h-[500px] flex justify-center lg:justify-end items-center' style={{borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70% '}}>
-                    <img className='lg:w-[400px] w-72 h-72  rounded-xl' src="http://www.deeptamanohar.life.s3-website.ap-south-1.amazonaws.com/3ojyyf2632223ekuqd259a7e-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/tile-5.jpg" alt="" />
+                    <Image width='288' height='288' className='lg:w-[400px] w-72 h-72  rounded-xl' src={pic3} alt="photo" />
                 </div>
                 <div className='text-center lg:text-left'>
                     <h3>Lifestyle</h3>
