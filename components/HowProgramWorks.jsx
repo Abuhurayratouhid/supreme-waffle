@@ -1,4 +1,9 @@
+import Image from 'next/image';
 import React from 'react';
+import pic1 from '../public/assets/step1.svg';
+import pic2 from '../public/assets/step2.svg';
+import pic3 from '../public/assets/step3.svg';
+import pic4 from '../public/assets/step4.svg';
 
 const steps = [
     {
@@ -6,28 +11,28 @@ const steps = [
         step: 'Step-1',
         title: 'Clarity Call',
         subTitle: 'Have a call with us to know how we work. Make program payment. Start program from comfort of your home.',
-        picture: 'http://www.deeptamanohar.life.s3-website.ap-south-1.amazonaws.com/images/step1.svg'
+        picture: pic1
     },
     {
         id: 2,
         step: 'Step-2',
         title: 'Register to one of our program',
         subTitle: 'on your diet, supplements, lifestyle, etc. Explanations sent via text, images & videos.',
-        picture: 'http://www.deeptamanohar.life.s3-website.ap-south-1.amazonaws.com/images/step2.svg'
+        picture: pic2
     },
     {
         id: 3,
         step: 'Step-3',
         title: 'Connecting the medical history',
         subTitle: 'Fill out a medical history form, do a blood test and have a detailed call with our medical expert',
-        picture: 'http://www.deeptamanohar.life.s3-website.ap-south-1.amazonaws.com/images/step3.svg'
+        picture: pic3
     },
     {
         id: 4,
         step: 'Step-4',
         title: 'Follow Up Consults',
         subTitle: 'happen each month. Health progress reviewed. Changes made, when needed. Ask questions on chat/mail. (working hours only please)',
-        picture: 'http://www.deeptamanohar.life.s3-website.ap-south-1.amazonaws.com/images/step4.svg'
+        picture: pic4
     },
 ]
 
@@ -44,7 +49,7 @@ const HowProgramWorks = () => {
              className='bg-white w-56  p-3 px-5 mt-5 m-auto'
              >
                 <p className='text-center border-2 mb-5'>{step.step}</p>
-                <img className='w-40 h-56' src={step.picture} alt="" />
+                <Image width='160' height='244' className='w-40 h-56' src={step.picture} alt="" />
                 <h3 className='my-2'>{step.title}</h3>
                 <p>{step.subTitle}</p>
             </div>)}
