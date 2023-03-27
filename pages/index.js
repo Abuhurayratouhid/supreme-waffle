@@ -28,14 +28,14 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"></link>
       </Head>
       <Navbar />
-      <Banner />
+      {/* <Banner /> */}
       <OurPrograms />
-      <HowWeDo />
+      {/* <HowWeDo />
       <OurClientHaveSeen />
       <HowProgramWorks />
       <Stories />
       <ExpertTeam />
-      <OurMobileApp />
+      <OurMobileApp /> */}
       <Footer />
     </>
   )
