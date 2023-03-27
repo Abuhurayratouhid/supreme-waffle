@@ -16,7 +16,7 @@ body{
 .banner {
   width: 100%;
   height: 100vh;
-  background-image: url('http://www.deeptamanohar.life.s3-website.ap-south-1.amazonaws.com/images/pho3.jpg');
+  background-image: url('../public/assets/bg-1.jpg');
   background-size: cover;
   background-position: center;
   animation: changeBgImage 15s infinite;
@@ -27,10 +27,10 @@ body{
 
 @keyframes changeBgImage {
   0% {
-    background-image: url('http://www.deeptamanohar.life.s3-website.ap-south-1.amazonaws.com/images/pho3.jpg');
+    background-image: url('../public/assets/bg-1.jpg');
   }
   100% {
-    background-image: url('http://www.deeptamanohar.life.s3-website.ap-south-1.amazonaws.com/images/3.jpg');
+    background-image: url('../public/assets/bg-2.jpg');
   }
   /* 100% {
     background-image: url('https://cff2.earth.com/uploads/2019/04/03114559/lotus1-960x640.jpg');
