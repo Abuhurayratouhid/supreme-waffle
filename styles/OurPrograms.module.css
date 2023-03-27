@@ -1,0 +1,27 @@
+/* css for shape */
+.main{
+    position: relative;
+    /* margin-top: -10em; */
+    /* z-index: 1; */
+}
+
+.custom_shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  
+  .custom_shape svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 167px;
+  }
+  
+  .custom_shape .shape_fill {
+    fill: #ffffff;
+  }
